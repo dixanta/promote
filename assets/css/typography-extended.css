@@ -1,0 +1,48 @@
+/*OVERRRIDE*/
+ul {
+	list-style-type: none;
+}
+
+table {
+	margin-bottom: 0;
+}
+
+th {
+	font-weight: bold; 
+	background:#a6a6a6;
+	text-align:center;
+	border-bottom:1px solid #a6a6a6; 
+}
+
+
+td {
+	padding:5px 0px;
+	vertical-align:middle;
+	border-bottom:0px;
+}
+
+#search-panel tr td {
+	padding:0px;
+	border-bottom:0px;
+	vertical-align:baseline;
+}
+
+p {
+	margin: 0; 
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: WWFRegular,Arial,sans-serif;
+}
+
+h1 {
+	font-size: 62px;
+	line-height: 62px;
+}
+
+h2 {
+	font-size: 36px;
+	line-height: 36px;
+}
+
+a {color:#006262;}
