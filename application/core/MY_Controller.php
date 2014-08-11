@@ -64,7 +64,28 @@ class Site_Controller extends CI_Controller
 
 		log_message('debug','BackendPro : Site_Controller class loaded');
 	}
+	
+	function mail_config()
+	{
+		$config['useragent'] = "Kgarira";
+		$config['protocol'] = $this->preference->item('email_protocol');
+		$config['mailpath'] = $this->preference->item('email_mailpath');
+		$config['smtp_host'] = $this->preference->item('smtp_host');
+		$config['smtp_user'] = $this->preference->item('smtp_user');
+		$config['smtp_pass'] = $this->preference->item('smtp_pass');
+		$config['smtp_port'] = $this->preference->item('smtp_port');
+		$config['smtp_timeout'] = $this->preference->item('smtp_timeout');
+		$config['wordwrap'] = $this->preference->item('email_wordwrap');
+		$config['wrapchars'] = $this->preference->item('email_wrapchars');
+		$config['mailtype'] = $this->preference->item('email_mailtype');
+		$config['charset'] = $this->preference->item('email_charset');
+		$config['bcc_batch_mode'] = $this->preference->item('bcc_batch_mode');
+		$config['bcc_batch_size'] = $this->preference->item('bcc_batch_size');
+		return $config;	
+	}
 }
+
+
 
 include_once("Admin_Controller.php");
 include_once("Public_Controller.php");
